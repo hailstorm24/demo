@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Illuminate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <div class="logo-circle"></div>
+            <div>Illluminate</div>
+        </div>
+    </nav>
+
+    <div class = "wrapper">
+        <div class="main-content">
+            <div class = "wrapper info-header">
+                <h1>Illuminate Different Gendered Words for Your Work</h1>
+                <div>
+                    <p>Track Different Gendered Words Before You Send a Recommendation Letter!</p>
+                    <button class="help-button">Read More About the Issue</button>
+                </div>
+            </div>
+            <div class="input-area">
+                <div class="input-field" contenteditable="true">Paste text here...</div>
+            </div>
+        </div>
+        
+
+        <div class="sidebar">
+            <div class="overview-section">
+                <div class = "over-header">
+                    <h2>Overview </h2>
+                </div>
+                <div class = "button-group2">
+                    <button class = "btn-rescan">Scan</button>
+                    <button class = "btn-clear">Clear</button>
+                </div>
+                <div class = "result-box">
+                  
+                    <div>    
+                        <div class="count-display">0</div>                 
+                         <h3>Number of Adjectives to Change</h3>
+                    </div>
+                  
+                </div>
+            </div>
+
+            <!--Flagged-->
+            <div class="overview-section">
+                <div class = "over-header">
+                    <h2>Flagged </h2> 
+                    <p>Words that are in the extremes</p>
+                </div>
+                <div class="edit-section">
+
+                </div>
+            </div>
+
+            <!--Suggestions-->
+            <div class="overview-section">
+                <div class = "over-header">
+                    <h2>Suggestion </h2> 
+                    <p>Words that are in the medium</p>
+                </div>
+                <div class="edit-section">
+                </div>
+            </div>
+
+            
+    
+              <!-- Modal -->
+            <div class="modal-overlay">
+                <div class="modal">
+                    <button class="modal-close">×</button>
+                    <h2>Why do we need a gender tracker?</h2>
+                    <div class="modal-content">
+                        <div class="modal-image"></div>
+                        <h3>Help Track Biases in Cover Letters or Critiques</h3>
+                        <p>Allows for recruiters and instructors to give most unbiased feedback as possible</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Add this right before the closing </div> of main-content -->
+        <div class="toolbar">
+            <div class="format-tools">
+                <button class="format-btn" data-command="bold" title="Bold">
+                    <i class="fa fa-bold"></i>
+                </button>
+                <button class="format-btn" data-command="italic" title="Italic">
+                    <i class="fa fa-italic"></i>
+                </button>
+                <button class="format-btn" data-command="insertUnorderedList" title="Bullet List">
+                    <i class="fa fa-list-ul"></i>
+                </button>
+                <button class="format-btn" data-command="createLink" title="Insert Link">
+                    <i class="fa fa-link"></i>
+                </button>
+                <button class="format-btn" data-command="removeFormat" title="Clear Formatting">
+                    <i class="fa fa-remove"></i>
+                </button>
+            </div>
+            <div class="text-stats">
+                <span class="word-count">0 words</span>
+            </div>
+            <div class="copy-tools">
+                <button class="copy-btn" title="Copy Text">
+                    <i class="fa fa-copy"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+    <script src = "script.js"></script>
+</html>
+
+
+
+    
